@@ -36,8 +36,6 @@ class CRAG:
         self.executor = executor
         self.map_size = map_size
 
-        args = sys.stdin.readline().split(" ")
-
         self.BEST_RATIO = 0.1 # What percentage of previous test suite we want to use as seed
         self.MAX_STRENGTH = 5 # We stop increasing n in n-wise combinations when we reach n=MAX_STRENGTH
         self.ROAD_PARAM_COUNT = 10 # Road Piece Length values + Kappa values
